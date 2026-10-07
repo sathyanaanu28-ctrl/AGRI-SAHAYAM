@@ -1,0 +1,8 @@
+{
+  "name": "AgriSahay",
+  "description": "Smart eco-farming, AI crop disease pathology diagnostics, compost optimization, crop rotation, and verified farm land marketplace.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,213 @@
+import { FarmListing } from '../types';
+
+export const SAMPLE_FARMS: FarmListing[] = [
+  {
+    id: 'farm_001',
+    sellerId: 'seller_101',
+    sellerName: 'Balasaheb Shinde',
+    sellerPhone: '+91 98220 84721',
+    title: 'Fertile Black Soil Agricultural Land with Perennial Canal & Drip',
+    description: 'Prime 4.5-acre agricultural land located in the rich sugarcane and onion belt of Baramati. Soil is deep Regur (Black Cotton) with 6.5-7.5 pH, ideal for sugarcane, cotton, and vegetables. Features 2 functional borewells (300ft with 2.5-inch constant discharge) plus sanctioned Nira canal irrigation rights. Complete automated drip irrigation lines installed across all plots. 3-phase agricultural power connection with dedicated 15 HP transformer. Direct 25-foot paved road access from state highway.',
+    images: [
+      'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=1200&q=80'
+    ],
+    price: 4500000,
+    landSizeAcres: 4.5,
+    state: 'Maharashtra',
+    district: 'Pune',
+    village: 'Baramati Rural (Supa Rd)',
+    latitude: 18.1524,
+    longitude: 74.5772,
+    cropType: 'Sugarcane & Organic Onions',
+    soilType: 'Deep Black Cotton Soil (Regur)',
+    waterAvailability: 'Canal Rights + 2 High-Yield Borewells (24x7)',
+    electricityAvailability: '3-Phase 8 Hours Guaranteed Ag Power',
+    roadAccess: '25-ft Paved Approach Road (1 km from State Highway)',
+    facilities: [
+      '2 Active Borewells',
+      'Automated Drip Filtration Unit',
+      'Labor Quarters (2 Rooms)',
+      'Perimeter Chainlink Fencing',
+      'Tractor Shed'
+    ],
+    status: 'published',
+    featured: true,
+    createdAt: '2026-09-24T10:30:00.000Z',
+    updatedAt: '2026-09-24T10:30:00.000Z'
+  },
+  {
+    id: 'farm_002',
+    sellerId: 'seller_102',
+    sellerName: 'Sardar Gurvinder Singh',
+    sellerPhone: '+91 94172 10988',
+    title: 'High-Yield Indo-Gangetic Wheat-Paddy Farm with Tubewell',
+    description: '8-Acre contiguous flat fertile agricultural holding in Jalandhar fertile plains. Laser-leveled soil with high organic carbon content. Historically yields 24-26 quintals/acre for wheat and 32 quintals/acre for PR-126 Basmati paddy. Powered by heavy-duty 20 HP submersible tubewell with sweet groundwater table. Metal boundary demarcated, clean revenue 7/12 title deeds with zero encumbrance.',
+    images: [
+      'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1530507629858-e4977d30e9e0?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1200&q=80'
+    ],
+    price: 9600000,
+    landSizeAcres: 8.0,
+    state: 'Punjab',
+    district: 'Jalandhar',
+    village: 'Nakodar Tehsil',
+    latitude: 31.1278,
+    longitude: 75.4722,
+    cropType: 'Basmati Paddy & Sharbati Wheat',
+    soilType: 'Alluvial Loamy Clay',
+    waterAvailability: '20 HP Submersible Tubewell + Siphoned Canal Distributary',
+    electricityAvailability: 'Dedicated 3-Phase Agricultural Feeder',
+    roadAccess: 'Tar Road Frontage suitable for Heavy Combined Harvesters',
+    facilities: [
+      'Heavy Submersible Motor',
+      'Grain Drying Concrete Floor (Khaliyan)',
+      'Secure Equipment Shed',
+      'Boundary Pillars Demarcated'
+    ],
+    status: 'published',
+    featured: true,
+    createdAt: '2026-09-22T08:15:00.000Z',
+    updatedAt: '2026-09-22T08:15:00.000Z'
+  },
+  {
+    id: 'farm_003',
+    sellerId: 'seller_103',
+    sellerName: 'K. Venkateswara Rao',
+    sellerPhone: '+91 94401 55299',
+    title: 'Commercial Dragon Fruit & Mango Organic Orchard with Solar Pump',
+    description: '6.2-Acre established horticultural orchard. 3.5 acres under certified organic Taiwan Red Dragon Fruit (trellis concrete pole structure with drip), currently generating ₹18-22 Lakhs gross annual revenue. 2.7 acres planted with Banganapalli and Totapuri export-grade mangoes. Equipped with a 7.5 HP MNRE-subsidized solar irrigation pump and 50,000-liter rainwater harvesting farm pond.',
+    images: [
+      'https://images.unsplash.com/photo-1597848212624-a19eb35e2651?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1592417817098-8f3d6eb22521?auto=format&fit=crop&w=1200&q=80'
+    ],
+    price: 6800000,
+    landSizeAcres: 6.2,
+    state: 'Andhra Pradesh',
+    district: 'Krishna',
+    village: 'Nuzvid Horticultural Zone',
+    latitude: 16.785,
+    longitude: 80.8466,
+    cropType: 'Organic Dragonfruit & Export Mango',
+    soilType: 'Red Sandy Loam with Organic Compost Bedding',
+    waterAvailability: '7.5 HP Solar Borewell + 50,000L Lined Farm Pond',
+    electricityAvailability: 'Grid Solar Net-Metering + 3-Phase Backup',
+    roadAccess: 'All-Weather Bitumen Link Road (Direct Highway Proximity)',
+    facilities: [
+      'Concrete Pole Trellis System (3.5 Acres)',
+      'Solar Irrigation Controller',
+      'Rainwater Farm Pond',
+      'Organic Composting Pits',
+      'Packing & Grading Shed'
+    ],
+    status: 'published',
+    featured: false,
+    createdAt: '2026-09-20T14:45:00.000Z',
+    updatedAt: '2026-09-20T14:45:00.000Z'
+  },
+  {
+    id: 'farm_004',
+    sellerId: 'seller_104',
+    sellerName: 'Patel Hasmukhbhai',
+    sellerPhone: '+91 98251 77312',
+    title: 'Certified Organic Groundnut & Cumin Land with Micro-Sprinklers',
+    description: '12-Acre contiguous rectangular holding in Saurashtra oilseed belt. Certified organic for past 4 years (NPOP standard). Ideal for groundnut, cumin (jeera), and sesame. Equipped with micro-sprinklers and underground pipeline distribution across 4 distinct field zones.',
+    images: [
+      'https://images.unsplash.com/photo-1527842891421-42eec6e703ea?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80'
+    ],
+    price: 8400000,
+    landSizeAcres: 12.0,
+    state: 'Gujarat',
+    district: 'Rajkot',
+    village: 'Gondal Taluka',
+    latitude: 21.9619,
+    longitude: 70.7923,
+    cropType: 'Organic Groundnut, Cumin & Castor',
+    soilType: 'Medium Black & Gravelly Loam',
+    waterAvailability: '3 Tube Wells with PVC Underground Distribution Network',
+    electricityAvailability: 'Jyotigram Yojana Continuous Power + Dedicated Ag Feeder',
+    roadAccess: 'Double-Lane Paved Village Road Frontage',
+    facilities: [
+      'Micro-Sprinkler Setup',
+      'Cattle Barn & Vermicompost Unit',
+      'Bio-Pesticide Preparation Tanks',
+      'Clear Revenue Title'
+    ],
+    status: 'published',
+    featured: true,
+    createdAt: '2026-09-19T09:00:00.000Z',
+    updatedAt: '2026-09-19T09:00:00.000Z'
+  },
+  {
+    id: 'farm_005',
+    sellerId: 'seller_105',
+    sellerName: 'M. Senthil Kumar',
+    sellerPhone: '+91 97890 32145',
+    title: 'Lush Coconut Grove & Spices Plantation with River Lift Irrigation',
+    description: '5.0-Acre yielding coconut grove situated near the Amaravathi river basin. 320 yielding Tall x Dwarf hybrid palms yielding 130-150 nuts/palm annually. Intercropped with organic cocoa, nutmeg, and black pepper vines on trunk. River lift sanctioned pipeline ensures year-round abundant sweet water.',
+    images: [
+      'https://images.unsplash.com/photo-1585336261026-77564d6e6d1b?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=1200&q=80'
+    ],
+    price: 5200000,
+    landSizeAcres: 5.0,
+    state: 'Tamil Nadu',
+    district: 'Tiruppur',
+    village: 'Dharapuram / Amaravathi Basin',
+    latitude: 10.7275,
+    longitude: 77.5276,
+    cropType: 'Hybrid Coconut, Cocoa & Pepper',
+    soilType: 'Red Loam with High Organic Foliage Humus',
+    waterAvailability: 'River Lift Irrigation Sanction + 1 Deep Borewell',
+    electricityAvailability: 'Tamil Nadu Free Ag Electricity Tariff Card Available',
+    roadAccess: 'Tar Panchayat Road with Direct Truck Turning Bay',
+    facilities: [
+      '320 Bearing Coconut Palms',
+      'Intercropped Cocoa Trees',
+      'Copra Drying Yard',
+      'Electric River Pump Station'
+    ],
+    status: 'published',
+    featured: false,
+    createdAt: '2026-09-18T16:20:00.000Z',
+    updatedAt: '2026-09-18T16:20:00.000Z'
+  },
+  {
+    id: 'farm_006',
+    sellerId: 'seller_106',
+    sellerName: 'Rameshwar Lal Jat',
+    sellerPhone: '+91 94140 88203',
+    title: 'High-Tech Polyhouse Vegetable Farm & Open Mustard Cultivation',
+    description: '3.5-Acre agricultural farm with 4,000 sq. meter naturally ventilated climate-controlled polyhouse installed. Currently growing seedless Dutch cucumber and colorful bell peppers. The remaining 2.5 acres is planted with high-oil content mustard and barley. Includes fertigation injectors and cold storage pre-cooling room.',
+    images: [
+      'https://images.unsplash.com/photo-1597848212624-a19eb35e2651?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1200&q=80'
+    ],
+    price: 6200000,
+    landSizeAcres: 3.5,
+    state: 'Rajasthan',
+    district: 'Jaipur',
+    village: 'Chomu Agricultural Cluster',
+    latitude: 27.1724,
+    longitude: 75.7208,
+    cropType: 'Protected Polyhouse Vegetables & Mustard',
+    soilType: 'Sandy Loam with Soil Conditioning Bedding',
+    waterAvailability: '2 Tube Wells + 100,000L Concrete Reservoir Tank',
+    electricityAvailability: 'Commercial Agro Power Supply (3-Phase)',
+    roadAccess: 'Concrete Approach Road directly connected to NH-52',
+    facilities: [
+      '4,000 sq.m GI Pipe Polyhouse',
+      'Dosatron Automated Fertigation System',
+      'Small Pre-Cooling Cold Room (5MT)',
+      'Security Post & Fencing'
+    ],
+    status: 'published',
+    featured: true,
+    createdAt: '2026-09-17T11:10:00.000Z',
+    updatedAt: '2026-09-17T11:10:00.000Z'
+  }
+];
